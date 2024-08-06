@@ -28,7 +28,6 @@ const generateThumbnails = (pictures) => {
 
   // обработчик клика по миниатюре
   postsList.addEventListener('click', (evt) => {
-
     const target = evt.target.closest('.picture');
 
     if (target) {
