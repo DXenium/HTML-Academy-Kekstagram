@@ -26,7 +26,7 @@ const generateThumbnails = (pictures) => {
 
   postsList.append(fragment);
 
-  // обработчик клика по миниатюре
+  // обработчик клика по миниатюре перенесла из модуля fullscreenpost
   postsList.addEventListener('click', (evt) => {
     const target = evt.target.closest('.picture');
 
