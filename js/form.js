@@ -65,7 +65,7 @@ function onDocumentKeydown(evt) {
     evt.preventDefault();
     hideModal();
   }
-}
+}//т
 
 function onCancelButtonClick () {
   hideModal();
