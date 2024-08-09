@@ -24,14 +24,14 @@ const submitButton = form.querySelector('.img-upload__submit');
 const photoPreview = form.querySelector('.img-upload__preview img');
 const effectsPreviews = form.querySelectorAll('.effects__preview');
 
-const showModal = () => {//показать модалку
+const showModal = () => { //показать модалку
   overlay.classList.remove('hidden');
   body.classList.add('modal-open');
   document.addEventListener('keydown', onDocumentKeydown);
   cancelButton.addEventListener('click', onCancelButtonClick);
 };
 
-const hideModal = () => {//скрыть модалку
+const hideModal = () => { //скрыть модалку
   form.reset();//сбросить значения формы
   pristine.reset();//сбросить значения валидатора
   resetScale();//сбросить значения масштабирования
@@ -72,7 +72,7 @@ function onCancelButtonClick () {
 }
 
 const onFileInputChange = () => {
-  showModal();
+  showModal();//перенесли функцию повыше, чтобы проверить в тестах
 
   const file = fileField.files[0];
 
