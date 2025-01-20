@@ -4,7 +4,7 @@ import { showAlert, debounce } from './util.js';
 import { setOnFormSubmit, hideModal } from './form.js';
 import { showSuccessMessage, showErrorMessage } from './message.js';
 import { initFilter as initFilter, getFilteredPictures } from './filter.js';
-import { onThumbnailClick } from './fullscreenpost';
+import { onThumbnailClick } from './fullscreenpost.js';
 
 
 const postsList = document.querySelector('.pictures');
